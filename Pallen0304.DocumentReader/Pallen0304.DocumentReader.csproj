@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FileHelpers" Version="3.4.2" />
+    <PackageReference Include="NetMQ" Version="4.0.1.6" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Pallen0304.Common\Pallen0304.Common.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Input\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Input\People.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>
